@@ -72,3 +72,9 @@ Download : https://github.com/rancher-sandbox/rancher-desktop/releases
 Deploy a Web Application in a Nginx,httpd,apache2 Container 
 
 https://github.com/Msocial123/Company-Clahan-WebSite.git
+
+#############################################################
+
+docker pull muralisocial123/oracle-web-app:latest
+docker run -td --name web-app1 -p 85:80 muralisocial123/oracle-web-app:latest
+https://github.com/Msocial123/Oracle-Web-APP.git
