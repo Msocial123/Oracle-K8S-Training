@@ -1,0 +1,33 @@
+25th Nov - Commands :
+
+ 1 docker create ubuntu /bin/bash
+   2 docker ps
+   3 docker ps -a
+   4 docker images
+   5 docker start ce6bc8a0b84f
+   6 docker ps
+   7 docker ps -a
+   8 docker create -it --name webserver ubuntu /bin/bash
+   9 docker ps -a
+  10 docker start webserver
+  11 docker ps
+  12 docker inspect webserver
+  13 docker ps
+  14 clear
+  15 docker ps
+  16 docker attach webserver
+  17 docker ps
+  18 docker attach webserver
+  19 docke rps
+  20 docker ps
+  21 docke ps -a
+  22 docker ps -a
+  23 docker start webserver
+  24 clear
+  25 docker ps
+  26 docker run -it --name example-app amazonlinux /bin/bash
+  27 docker ps
+  28 docker run -td --name SonarQube-Server -p 9000:9000 sonarqube:latest
+  29 docker ps
+  30 docker port sonarqube
+  31 docker port  SonarQube-Server
