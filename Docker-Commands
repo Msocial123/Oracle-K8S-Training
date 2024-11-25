@@ -32,3 +32,28 @@ Download : https://github.com/rancher-sandbox/rancher-desktop/releases
   29 docker ps
   30 docker port sonarqube
   31 docker port  SonarQube-Server
+   33 docker --help
+  34 clear
+  35 docker stats
+  36 clear
+  37 docker run -td --name sample-cont --memory 512m --cpus 100m -p 8081:80 nginx:latest
+  38 docker run -td --name sample-cont --memory 512m --cpus 1 -p 8081:80 nginx:latest
+  39 docker stats
+  40 clear
+  41 docker ps
+  42 docker stop sample-cont
+  43 docker ps
+  44 docker rm sample-cont
+  45 docker ps -a
+  46 docker rm -f SonarQube-Server
+  47 docker images
+  48 docker rmi sonarqube
+  49 docker images
+  50 docker ps
+  51 docker pause webserver
+  52 docker ps
+  53 docker unpause webserver
+  54 docker ps
+  55 docker kill webserver
+  56 docker ps
+  57 docker ps -a
