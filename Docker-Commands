@@ -57,3 +57,12 @@ Download : https://github.com/rancher-sandbox/rancher-desktop/releases
   55 docker kill webserver
   56 docker ps
   57 docker ps -a
+
+  #####################################################
+
+  docker pull muralisocial123/custom-oracle-img:latest
+  67 docker run -td --name web-app -p 84:80 custom-img-example
+  68 docker exec -it web-app /bin/bash
+  69 docker images
+  70 docker tag custom-img-example muralisocial123/custom-oracle-img
+  71 docker push  muralisocial123/custom-oracle-img
