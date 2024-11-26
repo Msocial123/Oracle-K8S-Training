@@ -96,8 +96,8 @@ docker push tagged Image Name
 docker push muralisocial123/node-test-app:1.0
 
 #########################################################################
-  14 docker run -it --name A1 -v /mydata -p 4546:4545 node-test-app:latest /bin/bash
-  15 docker run -it --name A2 -v murali:/mydata -p 4547:4545 node-test-app:latest /bin/bash
-  16 docker run -it --name A3 -v murali:/mydata -p 4548:4545 node-test-app:latest /bin/bash
-  17 docker run -it --name A4 -v C:\Workspace\Oracle-Web-Volume:/mydata -p 4549:4545 node-test-app:latest /bin/bash
-  18 docker run -it --name A7 --privileged=true --volumes-from A4  ubuntu:latest
+  14 docker run -it --name A1 -v /mydata -p 4546:4545 node-test-app:latest /bin/bash : Anonymous Volumes
+  15 docker run -it --name A2 -v murali:/mydata -p 4547:4545 node-test-app:latest /bin/bash : Named Volumes
+  16 docker run -it --name A3 -v murali:/mydata -p 4548:4545 node-test-app:latest /bin/bash : Named Volumes
+  17 docker run -it --name A4 -v C:\Workspace\Oracle-Web-Volume:/mydata -p 4549:4545 node-test-app:latest /bin/bash : Bind Volumes
+  18 docker run -it --name A7 --privileged=true --volumes-from A4  ubuntu:latest : Share volume to other containers
