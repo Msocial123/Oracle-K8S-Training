@@ -83,3 +83,14 @@ https://github.com/Msocial123/Oracle-Web-APP.git
 
 docker pull muralisocial123/node-test-app:1.0
 docker run -td --name test-web -p 4546:4545 muralisocial123/node-test-app:1.0
+
+For Taging the Image:
+
+docker login
+docker tag local imagename reponame/image name 
+
+example : docker tag node-test-app:1.0 muralisocial123/node-test-app:1.0
+  
+docker push tagged Image Name 
+
+docker push muralisocial123/node-test-app:1.0
