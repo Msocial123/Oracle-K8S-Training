@@ -78,3 +78,8 @@ https://github.com/Msocial123/Company-Clahan-WebSite.git
 docker pull muralisocial123/oracle-web-app:latest
 docker run -td --name web-app1 -p 85:80 muralisocial123/oracle-web-app:latest
 https://github.com/Msocial123/Oracle-Web-APP.git
+
+26th Nov Commands :
+
+docker pull muralisocial123/node-test-app:1.0
+docker run -td --name test-web -p 4546:4545 muralisocial123/node-test-app:1.0
