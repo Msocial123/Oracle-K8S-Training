@@ -101,3 +101,50 @@ docker push muralisocial123/node-test-app:1.0
   16 docker run -it --name A3 -v murali:/mydata -p 4548:4545 node-test-app:latest /bin/bash : Named Volumes
   17 docker run -it --name A4 -v C:\Workspace\Oracle-Web-Volume:/mydata -p 4549:4545 node-test-app:latest /bin/bash : Bind Volumes
   18 docker run -it --name A7 --privileged=true --volumes-from A4  ubuntu:latest : Share volume to other containers
+  #######################################################################
+  Docker Networking :
+
+     1 docker ntwork ls
+   2 docker network ls
+   3 docker network rm  retail-app_kubernetes_default
+   4 docker network ls
+   5 docker ps
+   6 docker ps
+   7 docke ps -a
+   8 docker ps -a
+   9 docker start A7
+  10 docker ps
+  11 docker inspect A7
+  12 docker ps -a
+  13 docker rm $
+  14 docker rm $(docker ps -a -q)
+  15 docker ps
+  16 docker rm -f A7
+  17 docker ps
+  18 docker ps -a
+  19 clear
+  20 docker run -td --name A1 ubuntu /bin/bash
+  21 docker run -td --name A2 ubuntu /bin/bash
+  22 docker inspect A1
+  23 docker network inspect bridge
+  24 docker exec -it A1 /bin/bash
+  25 docker network create test-network --subnet=10.0.0.1/16 gateway=10.0.10.100
+  26 docker network create test-network --subnet=10.0.0.1/16 --gateway=10.0.10.100
+  27 docker network create test-network --subnet=10.0.0.0/16 --gateway=10.0.10.100
+  28 docker network ls
+  29 docker netwoek inspect test-network
+  30 docker network inspect test-network
+  31 docker run -td --net test-network --name B1 ubuntu
+  32 docker ps
+  33 docker inspect A1
+  34 docker inspect B1
+  35 docker exec -it A1 /bin/bash
+  36 docker network ls
+  37 docker network connect bridge B1
+  38 docker exec -it A1 /bin/bash
+  39 docker exec -it B1 /bin/bash
+  40 docker run -td --net test-network --name B2 ubuntu
+  41 docker exec -it B2 /bin/bash
+  42 docker network connect bridge B2
+  43 docker exec -it B2 /bin/bash
+  44 ifconfig
