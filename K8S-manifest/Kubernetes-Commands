@@ -1,0 +1,32 @@
+    1  kubectl get pods
+    2  kubectl explain namespace
+    3  clear
+    4  kubectl get ns
+    5  clear
+    6  kubectl create ns test-ns
+    7  kubectl get ns 
+    8  kubectl explain ns
+    9  clear
+   10  kubectl get ns
+   11  clear
+   12  kubectl run exmaple-web-app --image muralisocial123/oracle-web-app:latest --port 80 -o yaml
+   13  kubectl get pods
+   14  kubectl delete pod example-web-app
+   15  kubectl delete pod exmaple-web-app
+   16  clear
+   17  kubectl run web-app --image muralisocial123/oracle-web-app:latest --port 80 
+   18  kubectl get pods
+   19  kubectl get pods -o wide 
+   20  kubectl describe pod web-app
+   21  clear
+   22  kubectl get pods
+   23  kubectl exec -it web-app -- /bin/sh
+   24  kubectl get pods -o wide
+   25  kubectl exec -it web-app -- /bin/sh
+   26  clear
+   27  kubectl get pods
+   28  kubectl get pods -n test-ns
+   29  kubectl logs example-web-pod -n test-ns
+   30  kubectl get pods -o wide -n test-ns
+   31  kubectl logs example-web-pod -c example-pod -n test-ns
+   32  history
