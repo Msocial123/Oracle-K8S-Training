@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: oracle-web-app-rs 
+  labels:
+    app: example
 spec: # It defines the behaviour of the ReplicaSet
   replicas: 3
   selector:
