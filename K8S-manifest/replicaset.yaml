@@ -11,9 +11,6 @@ spec: # It defines the behaviour of the ReplicaSet
       web: app
   template: # Define the Pod defination
     metadata:
-      labels:
-        web: app 
-        name: mohan 
     spec: # It defines the behaviour of the Pod 
       containers:
         - name: test-web 
