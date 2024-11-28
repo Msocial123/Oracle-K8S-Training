@@ -30,3 +30,8 @@
    30  kubectl get pods -o wide -n test-ns
    31  kubectl logs example-web-pod -c example-pod -n test-ns
    32  history
+
+#######################################################################
+OCI Cluster Access :
+
+oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.ap-hyderabad-1.aaaaaaaayfg6iu4mr7igykw43laeixw22ejvdhoma6di72whwcxcnlbnfwjq --file $HOME/.kube/config --region ap-hyderabad-1 --token-version 2.0.0  --kube-endpoint PUBLIC_ENDPOINT
