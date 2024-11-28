@@ -1,0 +1,19 @@
+apiVersion: apps/v1 
+kind: ReplicaSet
+metadata:
+  name: oracle-web-app-rs 
+spec: # It defines the behaviour of the ReplicaSet
+  replicas: 3
+  selector:
+    matchLabels:
+      web: app
+  template: # Define the Pod defination
+    metadata:
+      labels:
+        web: app 
+    spec: # It defines the behaviour of the Pod 
+      containers:
+        - name: test-web 
+          image: muralisocial123/oracle-web-app:latest
+          ports:
+            - containerPort: 80     
