@@ -40,3 +40,33 @@ oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.ap-hyderabad-1.a
 
 oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.ap-hyderabad-1.aaaaaaaayfg6iu4mr7igykw43laeixw22ejvdhoma6di72whwcxcnlbnfwjq --file $HOME/.kube/config --region ap-hyderabad-1 --token-version 2.0.0  --kube-endpoint 140.245.208.248:6443
 
+#########################################################################
+Deployments Commands:
+
+  515  kubectl get deployments
+  516  kubectl scale deployment example-oracle-deployment --replicas=5
+  517  kubectl get pods 
+  518  kubectl get pods
+  519  kubectl get deployments
+  520  kubectl get rs
+  521  kubectl scale deployment example-oracle-deployment --replicas=3
+  522  kubectl get rs
+  523  kubectl get pods -o wide
+  524  kubectl get pods 
+  525  history
+  526  kubectl get pods -o wide
+  527  kubectl get deployments -o wide
+  528  kubectl set image deployment/example-oracle-deployment oracle-cont=muralisocial123/insurance-app-excelr:latest
+  529  kubectl get pods -o wide
+  530  kubectl get deployments
+  531  kubectl get deployments -o wide
+  532  kubectl describe deployment example-oracle-deployment 
+  533  kubectl rollout history deployment/example-oracle-deployment 
+  534  kubectl rollout history deployment/example-oracle-deployment --revision 1
+  535  kubectl rollout history deployment/example-oracle-deployment --revision 2
+  536  history
+
+  #################################  USE IMAGE FOR THE ROLLOUT ###########################
+
+  muralisocial123/transcation-image:latest
+
