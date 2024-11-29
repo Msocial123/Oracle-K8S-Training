@@ -8,6 +8,6 @@ spec:
   ports:
     - name: oracle-web 
       protocol: TCP 
-      port: {{ .Values.Service.port }}
+      port: {{ .Values.service.port }}
       targetPort: 80  
   type: LoadBalancer
