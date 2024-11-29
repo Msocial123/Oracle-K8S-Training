@@ -1,0 +1,3 @@
+deployment:
+  replicaCount: 3
+  
