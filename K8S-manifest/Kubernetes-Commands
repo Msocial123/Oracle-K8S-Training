@@ -92,3 +92,17 @@ Services :
   715  kubectl get pods
   716  kubectl get pods -o wide
   717  kubectl get svc
+
+###############################################
+  846  kubectl apply -f trans-deployment.yaml
+  847  kubectl get deployments
+  848  kubectl get svc
+  849  kubectl apply -f service.yaml
+  850  kubectl get svc
+  851  kubectl get svc -w
+  852  kubectl get pods -o wide
+  853  kubectl get svc -w
+  854  kubectl get svc app-deployment-svc
+  855  kubectl describe  svc app-deployment-svc
+  856  kubectl get svc
+  857  kubectl describe svc app-deployment-svc  
