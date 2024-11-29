@@ -18,3 +18,10 @@ spec:
             name: example-oracle-svc
             port: 
               number: 82
+      - pathType: Prefix
+        path: /(.*)
+        backend:
+          service:
+            name: example-oracle-svc
+            port: 
+              number: 82        
