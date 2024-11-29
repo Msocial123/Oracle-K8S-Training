@@ -70,3 +70,25 @@ Deployments Commands:
 
   muralisocial123/transcation-image:latest
 
+ocid1.cluster.oc1.ap-hyderabad-1.aaaaaaaayfg6iu4mr7igykw43laeixw22ejvdhoma6di72whwcxcnlbnfwjq
+
+#############################################################################################
+Services :
+700  kubectl describe pod example-oracle-deployment-6c759fb7d-5pz2j
+  701  vim deployment1.yaml 
+  702  kubectl apply -f deployment1.yaml 
+  703  kubectl top pod example-oracle-deployment-6c759fb7d-5pz2j 
+  704  kubectl get pods -n vellai
+  705  kubectl get pods -n vellai -w
+  706  cat deployment1.yaml 
+  707  git pull
+  708  kubectl apply -f deployment.yaml 
+  709  kubectl get svc
+  710  kubectl get svc -w
+  711  ls
+  712  cd vellai/
+  713  ls
+  714  kubectl describe svc example-oracle-svc
+  715  kubectl get pods
+  716  kubectl get pods -o wide
+  717  kubectl get svc

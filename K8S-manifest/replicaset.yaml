@@ -16,4 +16,4 @@ spec: # It defines the behaviour of the ReplicaSet
         - name: test-web 
           image: muralisocial123/oracle-web-app:latest
           ports:
-            - containerPort: 80     
+            - containerPort: 80    
