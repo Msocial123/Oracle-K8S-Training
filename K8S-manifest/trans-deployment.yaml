@@ -1,16 +1,16 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: transacation-app-deployment 
+  name: insurance-app-deployment 
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: oracle 
+      app: example 
   template:
     metadata:
       labels:
-        app: oracle 
+        app: example 
     spec: 
       containers:
         - name: trans-app
@@ -23,4 +23,18 @@ spec:
               memory: 128Mi
             limits:
               cpu: 200m
-              memory: 256Mi    
+              memory: 256Mi
+--- 
+apiVersion: v1 
+kind: Service 
+metadata: 
+  name: insurance-deployment-svc 
+spec: 
+  selector:
+    app: example
+  ports:
+    - name: insurance-web 
+      protocol: TCP 
+      port: 83
+      targetPort: 80 
+  type: ClusterIP                 
